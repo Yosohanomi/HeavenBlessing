@@ -4,20 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simonenko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    
 </head>
 <body>
-    <header class="header">
+    <button class="btn-open" data-modal-open>Відкрити модалку</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close__btn" data-modal-close>
+                    <svg class="icon-close">
+                        <use href="./images/icons/symbol-defs[1].svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title">Reach out to us!</h2>
+                <form class="modal__form">
+                    <label for="" class="modal__label">
+                        <div class="modal__input-thumb">
+                            <input type="text" class="modal__input" placeholder="Your name*">
+                            <svg class="label-icon">
+                                <use href="./images/icons/symbol-defs[1].svg#icon-profile"></use>
+                            </svg>
+                        </div>
+                    </label>
 
-    </header>
+                    <label for="" class="modal__label">
+                        <div class="modal__input-thumb">
+                            <input type="text" class="modal__input" placeholder="Your name*">
+                            <svg class="label-icon">
+                                <use href="./images/icons/symbol-defs[1].svg#icon-envelop"></use>
+                            </svg>
+                        </div>
+                    </label>
 
-    <main>
+                    <label for="" class="modal__label">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message*"></textarea>
+                    </label>
+                    <button type="submit" class="modal__send-btn">Send message</button>
+                </form>
+                <iframe src="https://maps.app.goo.gl/yNjZGQkTH4PP6qSk7"></iframe>
+            </div>
+        </div>
 
-    </main>
-
-    <footer class="footer">
-
-    </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
