@@ -1,8 +1,28 @@
-.header {
-
+.header {    
+    display: flex;
+    align-items: center;
+    padding:25px 15px;
+    margin: 0 auto;
+}
+.logo__link {
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.logo__text {
+}
+.header__nav {
+}
+.header__nav-list {
+}
+.header__nav-item {
+}
+.header__nav-link {
 }
 
 
+/* MAIN */
 .hero {
     position: relative;
     height: 100vh;
@@ -101,7 +121,7 @@
 .modal__title {
     margin-bottom: 30px;
     color: #3E3E3E;
-    font-family: "Titillium Web" sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 52px;
@@ -143,7 +163,7 @@
     height: 73px;
 
         color: #FFF;
-    font-family: "Titillium Web" sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
